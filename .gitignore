@@ -1,0 +1,65 @@
+# Bicep build outputs
+*.json
+!*parameters*.json
+!*params*.json
+
+# Bicep lock files
+bicepconfig.lock.json
+
+# Azure deployment outputs
+*.deploymentStack.json
+.deployment
+
+# VS Code settings
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Operating System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Terraform (if mixed IaC)
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Environment and secrets
+.env
+.env.local
+*.local
+secrets.json
+*.secret.*
+
+# Azure CLI
+.azure/
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Node modules (for any tooling)
+node_modules/
+
+# Python (for any scripts)
+__pycache__/
+*.py[cod]
+venv/
+.Python
+
+# PowerShell modules cache
+PSGetModuleInfo.xml
